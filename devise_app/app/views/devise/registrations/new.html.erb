@@ -14,6 +14,21 @@
   </div>
 
   <div class="field">
+    <%= f.label :room_id %><bt />
+    <%= f.text_field :room_id, autofocus: true, autocomplete: "room_id" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :room_name %><bt />
+    <%= f.text_field :room_name, autofocus: true, autocomplete: "room_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tenant_id %><bt />
+    <%= f.text_field :tenant_id, autofocus: true, autocomplete: "tenant_id" %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>

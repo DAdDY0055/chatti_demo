@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 2019_09_08_114607) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.integer "room_id"
+    t.string "room_name"
+    t.integer "tenant_id"
     t.string "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
