@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'blogs#index'
 
   resources :blogs
@@ -6,4 +7,8 @@ Rails.application.routes.draw do
 
   # devise
   root to: "home#index"
+
+  # mail ※デモ用サイトのため、本番でもletter_openerを使う
+  mount LetterOpenerWeb::Engine, at: "/letter_opener"
+
 end
