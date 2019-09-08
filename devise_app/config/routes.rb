@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # devise
   root to: "home#index"
+  resources :users, :only => [:show]
 
   # mail ※デモ用サイトのため、本番でもletter_openerを使う
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
