@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'chats/show'
+  get 'chats/create'
   devise_for :users
   root 'blogs#index'
 
